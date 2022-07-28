@@ -1,22 +1,52 @@
 const container = document.querySelector('.container')
 
-const addingDivs = (amount) => {
 
-   for (let i = 0; i < amount; i++) {
+const sizing = document.querySelectorAll('.grid')
 
-      const square = document.createElement('div')
-      square.className = 'square'
-      
-      container.appendChild(square)   
-   }
+sizing.forEach((button) => {
    
-}
+   button.addEventListener('click', () => {
 
-container.style.width = '384px'
+      if (button.textContent === '16x16') {
 
-addingDivs(256) 
-// amount of squares ** 2
+         for (let i = 0; i < 256; i++) {
 
+            const square = document.createElement('div')
+            square.className = 'square'
+               
+            container.appendChild(square)
+            container.style.width = '384px'   
+         }
+            
+      }
+      
+      else if (button.textContent === '8x8') {
+
+         for (let i = 0; i < 64; i++) {
+
+            const square = document.createElement('div')
+            square.className = 'square'
+               
+            container.appendChild(square)
+            container.style.width = '192px'   
+         }
+            
+      }
+      
+      else if (button.textContent === '32x32') {
+
+         for (let i = 0; i < 1024; i++) {
+
+            const square = document.createElement('div')
+            square.className = 'square'
+               
+            container.appendChild(square)
+            container.style.width = '768px'   
+         }
+            
+      } 
+   })
+})
 
 const squares = document.querySelectorAll('.square')
 
@@ -28,3 +58,14 @@ squares.forEach((square) => {
       square.style.backgroundColor = 'black'
    })
 })
+
+// for (let i = 0; i < amount; i++) {
+
+//    const square = document.createElement('div')
+//    square.className = 'square'
+      
+//    container.appendChild(square)   
+// }
+   
+
+// container.style.width = '384px'
