@@ -47,7 +47,7 @@ sizing.forEach((button) => {
             square.style.padding = '24px'   
 
             container.appendChild(square)
-            container.style.width = '576px'   
+            container.style.width = '384px'   
          }
          addingSq()    
       }
@@ -58,11 +58,14 @@ sizing.forEach((button) => {
 
             const square = document.createElement('div')
             square.className = 'square'
+            square.style.padding = '8px'
+
             container.appendChild(square)
-            container.style.width = '768px'   
+            container.style.width = '512px'   
          }
          addingSq()    
-      } 
+      }
+          
    })
    
 })
