@@ -24,8 +24,25 @@ sizing.forEach((button) => {
 
       if (button.textContent === '16x16') {
 
-         for (let i = 0; i < 256; i++) {
+         const node = document.querySelector('.container')
 
+         const childList = document.querySelectorAll('.square')
+
+
+         // console.log(childList.length)
+
+         if (childList != 0) {
+            while (childList.length != 0) {
+                     
+               const child = document.querySelector('.square')
+   
+               node.removeChild(child)
+            }
+         }
+
+         console.log(node)
+
+         for (let i = 0; i < 256; i++) {
             const square = document.createElement('div')
             square.className = 'square'
             square.style.padding = '12px' 
@@ -39,7 +56,6 @@ sizing.forEach((button) => {
       }
       
       else if (button.textContent === '8x8') {
-
          for (let i = 0; i < 64; i++) {
 
             const square = document.createElement('div')
@@ -65,7 +81,7 @@ sizing.forEach((button) => {
          }
          addingSq()    
       }
-          
+
    })
    
 })
