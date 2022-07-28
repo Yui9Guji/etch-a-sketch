@@ -3,20 +3,43 @@ const container = document.querySelector('.container')
 
 const sizing = document.querySelectorAll('.grid')
 
-function addingSq() {
+function adding() {
+   
+   const buttons = document.querySelectorAll('.color')
    
    const squares = document.querySelectorAll('.square')
-   // const color = depends on the button clicked
 
-   squares.forEach((square) => {
+   buttons.forEach((button) => {
 
-      square.addEventListener('mouseover', () => {
-         square.style.backgroundColor = 'black'
+      button.addEventListener('click', () => {
+         
+         if (button.textContent.toLowerCase() === 'black') {
+
+            squares.forEach((square) => {
+
+               square.addEventListener('mouseover', () => {
+                  square.style.backgroundColor = 'black'
+               })
+         
+            })
+
+         }
+         else {
+
+             squares.forEach((square) => {
+
+               square.addEventListener('mouseover', () => {
+               square.style.backgroundColor = 'red'
+               })
+
+            })
+         }
+         
       })
-
    })
-   
+
 }
+
 
 sizing.forEach((button) => {
    
@@ -48,7 +71,7 @@ sizing.forEach((button) => {
             
             
          }
-         addingSq()  
+         adding()  
       }
       
       else if (button.textContent === '8x8') {
@@ -77,7 +100,7 @@ sizing.forEach((button) => {
             container.appendChild(square)
             container.style.width = '288px'   
          }
-         addingSq()    
+         adding()    
       }
       
       else if (button.textContent === '32x32') {
@@ -106,7 +129,7 @@ sizing.forEach((button) => {
             container.appendChild(square)
             container.style.width = '512px'   
          }
-         addingSq()    
+         adding()    
       }
 
    })
