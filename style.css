@@ -11,10 +11,28 @@ body {
    align-items: center;
    justify-content: center;
    
+   gap: 64px;
+
+   background-color: #8ecae6;
 }
 
+button {
+   border-radius: 16px;
+   border-color: #8ecae6;
+   background-color: #023047;
+   color: #fefae0;
+
+   padding: 32px;
+   
+   font-size: 16px;
+   font-weight: 900;
+   font-family: 'Sora';
+}
+
+
+
 .container {
-   border: 3px solid red;
+   border: 1px solid black;
    /* width: 288px;  */
 
    /* amount of pixels per square * amount of squares (16x16 == 16) */
@@ -27,3 +45,4 @@ body {
    /* border: 1px solid black; */
    padding: 12px;
 }
+
