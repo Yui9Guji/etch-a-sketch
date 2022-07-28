@@ -28,19 +28,15 @@ sizing.forEach((button) => {
 
          const childList = document.querySelectorAll('.square')
 
-
-         // console.log(childList.length)
-
          if (childList != 0) {
-            while (childList.length != 0) {
-                     
+
+            for (let i = 0; i < childList.length; i++) {
+               
                const child = document.querySelector('.square')
-   
+
                node.removeChild(child)
             }
          }
-
-         console.log(node)
 
          for (let i = 0; i < 256; i++) {
             const square = document.createElement('div')
@@ -56,6 +52,22 @@ sizing.forEach((button) => {
       }
       
       else if (button.textContent === '8x8') {
+         
+         const node = document.querySelector('.container')
+
+         const childList = document.querySelectorAll('.square')
+
+         if (childList != 0) {
+
+            for (let i = 0; i < childList.length; i++) {
+               
+               const child = document.querySelector('.square')
+
+               node.removeChild(child)
+            }
+         }
+
+
          for (let i = 0; i < 64; i++) {
 
             const square = document.createElement('div')
@@ -69,6 +81,21 @@ sizing.forEach((button) => {
       }
       
       else if (button.textContent === '32x32') {
+         
+         const node = document.querySelector('.container')
+
+         const childList = document.querySelectorAll('.square')
+
+         if (childList != 0) {
+
+            for (let i = 0; i < childList.length; i++) {
+               
+               const child = document.querySelector('.square')
+
+               node.removeChild(child)
+            }
+         }
+         
 
          for (let i = 0; i < 1024; i++) {
 
