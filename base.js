@@ -12,7 +12,7 @@ const addingDivs = (amount) => {
    
 }
 
-container.style.width = '288px'
+container.style.width = '384px'
 
 addingDivs(256) 
 // amount of squares ** 2
@@ -25,6 +25,6 @@ const squares = document.querySelectorAll('.square')
 squares.forEach((square) => {
 
    square.addEventListener('mouseover', () => {
-      square.style.backgroundColor = 'red'
+      square.style.backgroundColor = 'black'
    })
 })
