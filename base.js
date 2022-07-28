@@ -49,7 +49,7 @@ sizing.forEach((button) => {
             container.appendChild(square)
             container.style.width = '576px'   
          }
-            
+         addingSq()    
       }
       
       else if (button.textContent === '32x32') {
@@ -61,7 +61,7 @@ sizing.forEach((button) => {
             container.appendChild(square)
             container.style.width = '768px'   
          }
-            
+         addingSq()    
       } 
    })
    
