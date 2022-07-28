@@ -12,7 +12,9 @@ body {
 
 .container {
    /* border: 3px solid red; */
-   width: 288px;
+   /* width: 288px;  */
+
+   /* amount of pixels per square * amount of squares (16x16 == 16) */
 
    display: flex;
    flex-wrap: wrap;

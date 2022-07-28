@@ -12,4 +12,8 @@ const addingDivs = (amount) => {
    
 }
 
-addingDivs(256)
+container.style.width = '288px'
+
+addingDivs(256) 
+// amount of squares ** 2
+
