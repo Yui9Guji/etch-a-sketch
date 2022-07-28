@@ -17,3 +17,14 @@ container.style.width = '288px'
 addingDivs(256) 
 // amount of squares ** 2
 
+
+const squares = document.querySelectorAll('.square')
+
+// const color = depends on the button clicked
+
+squares.forEach((square) => {
+
+   square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = 'red'
+   })
+})
