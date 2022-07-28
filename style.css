@@ -44,10 +44,9 @@ button {
    align-items: center; */
 }
 
-.square {
-   /* border: 1px solid black; */
+/* .square {
    padding: 12px;
-}
+} */
 
 .buttons {
    display: flex;

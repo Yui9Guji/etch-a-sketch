@@ -3,6 +3,21 @@ const container = document.querySelector('.container')
 
 const sizing = document.querySelectorAll('.grid')
 
+function addingSq() {
+   
+   const squares = document.querySelectorAll('.square')
+   // const color = depends on the button clicked
+
+   squares.forEach((square) => {
+
+      square.addEventListener('mouseover', () => {
+         square.style.backgroundColor = 'black'
+      })
+
+   })
+   
+}
+
 sizing.forEach((button) => {
    
    button.addEventListener('click', () => {
@@ -13,11 +28,14 @@ sizing.forEach((button) => {
 
             const square = document.createElement('div')
             square.className = 'square'
-               
+            square.style.padding = '12px' 
+
             container.appendChild(square)
-            container.style.width = '384px'   
-         }
+            container.style.width = '384px'
             
+            
+         }
+         addingSq()  
       }
       
       else if (button.textContent === '8x8') {
@@ -26,9 +44,10 @@ sizing.forEach((button) => {
 
             const square = document.createElement('div')
             square.className = 'square'
-               
+            square.style.padding = '24px'   
+
             container.appendChild(square)
-            container.style.width = '192px'   
+            container.style.width = '576px'   
          }
             
       }
@@ -39,33 +58,12 @@ sizing.forEach((button) => {
 
             const square = document.createElement('div')
             square.className = 'square'
-               
             container.appendChild(square)
             container.style.width = '768px'   
          }
             
       } 
    })
-})
-
-const squares = document.querySelectorAll('.square')
-
-// const color = depends on the button clicked
-
-squares.forEach((square) => {
-
-   square.addEventListener('mouseover', () => {
-      square.style.backgroundColor = 'black'
-   })
-})
-
-// for (let i = 0; i < amount; i++) {
-
-//    const square = document.createElement('div')
-//    square.className = 'square'
-      
-//    container.appendChild(square)   
-// }
    
+})
 
-// container.style.width = '384px'
