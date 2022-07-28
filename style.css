@@ -1,6 +1,6 @@
 body {
    margin: 0;
-   margin-top: 32px;
+   margin-top: 16px;
    padding: 0;
 
    /* height: 100vh; */
@@ -12,20 +12,13 @@ body {
    align-items: center;
    justify-content: center;
    
-   gap: 64px;
+   gap: 32px;
 
    background-color: #8ecae6;
 }
 
 button {
    border-radius: 16px;
-   border-color: #8ecae6;
-   background-color: #023047;
-   color: #fefae0;
-
-   padding: 32px;
-   
-   font-size: 16px;
    font-weight: 900;
    font-family: 'Sora';
 }
@@ -62,7 +55,36 @@ button {
    flex: 1;
 }
 
+.sizing-buttons button {
+   border-color: #8ecae6;
+   background-color: #023047;
+   color: #fefae0;
+
+   padding: 32px;
+   
+   font-size: 16px;
+}
+
+
 .color-buttons {
    display: flex;
    flex: 1;
+}
+
+.color-buttons button {
+   border-color: #8ecae6;
+   background-color: black;
+   color: white;
+
+   padding: 16px;
+   
+   font-size: 16px;
+}
+
+.navbar {
+   font-size: 48px;
+   font-weight: 900;
+   font-family: 'Sora';
+   color: #023047;
+
 }
