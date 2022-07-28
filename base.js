@@ -72,10 +72,10 @@ sizing.forEach((button) => {
 
             const square = document.createElement('div')
             square.className = 'square'
-            square.style.padding = '24px'   
+            square.style.padding = '36px'   
 
             container.appendChild(square)
-            container.style.width = '384px'   
+            container.style.width = '576px'   
          }
          addingSq()    
       }
@@ -95,7 +95,7 @@ sizing.forEach((button) => {
                node.removeChild(child)
             }
          }
-         
+
 
          for (let i = 0; i < 1024; i++) {
 
